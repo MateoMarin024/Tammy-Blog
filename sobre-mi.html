@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mí | Tammy Blog</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="img/Logo.png" alt="Tammy Blog Logo" class="blog-logo-img">
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="articulos.html" class="nav-link">Artículos</a></li>
+                <li><a href="recetas.html" class="nav-link">Recetas Caseras</a></li>
+                <li><a href="resenas.html" class="nav-link">Reseñas</a></li>
+                <li><a href="sobre-mi.html" class="nav-link current">Sobre Mí</a></li>
+                <li><a href="consultoria.html" class="nav-link">Consultorías</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" aria-label="Abrir menú" id="menu-toggle"><i class="fas fa-bars"></i></button>
+    </header>
+
+    <main class="page-main about-layout">
+        <section class="about-hero">
+            <img src="img/TammyBlog.jpeg" alt="Foto de Tammy" class="profile-photo">
+            <div class="about-hero-text">
+                <h1>Hola, Soy Tammy.</h1>
+                <p class="section-subtitle">Estudiante, investigadora y tu guía para un cuidado de la piel honesto.</p>
+            </div>
+        </section>
+
+        <section class="about-story">
+            <h2>Mi Historia con la Piel</h2>
+            <p>Mi pasión por la cosmética nació de la frustración. Al igual que muchos, gasté mucho dinero en productos "milagrosos" que no solo no funcionaban, sino que empeoraban mi piel. Fue entonces cuando decidí que si quería resultados, tenía que entender la ciencia detrás de las etiquetas.</p>
+            <p>Como estudiante de belleza general en el salon mariela, aplico el rigor académico al análisis de productos. Mi promesa es simple: **investigación, honestidad y claridad**.</p>
+
+            <div class="mission-statement">
+                <h3>Mi Misión</h3>
+                <p>Hacer que tu piel sea única y brille al igual que tu.</p>
+            </div>
+        </section>
+
+        <section class="about-skills">
+            <h2>Mi Enfoque</h2>
+            <div class="skills-grid">
+                <div>
+                    <i class="fas fa-microscope"></i>
+                    <h3>Análisis INCI Riguroso</h3>
+                    <p>Desglosar cada ingrediente para entender su concentración y función real en la fórmula.</p>
+                </div>
+                <div>
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Base Científica</h3>
+                    <p>Todo consejo está respaldado por estudios dermatológicos y bioquímica.</p>
+                </div>
+                <div>
+                    <i class="fas fa-heart"></i>
+                    <h3>Enfoque Holístico</h3>
+                    <p>Entender que la piel es un reflejo de la salud, la alimentación y el bienestar emocional.</p>
+                </div>
+            </div>
+        </section>
+        
+        <div class="cta-bottom">
+            <p>¿Listo para trabajar juntos en tu rutina?</p>
+            <a href="consultoria.html" class="cta-button primary large">Agenda tu Consultoría Personalizada</a>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-col about-col">
+                <img src="img/Logo.png" alt="Tammy Blog Logo" class="blog-logo-img small">
+                <p>Tu plataforma de referencia para contenido honesto y experto sobre cuidado de la piel y bienestar.</p>
+            </div>
+            <div class="footer-col nav-col">
+                <h4>Navegación Rápida</h4>
+                <ul>
+                    <li><a href="articulos.html">Blog & Artículos</a></li>
+                    <li><a href="recetas.html">Recetas DIY</a></li>
+                    <li><a href="consultoria.html">Consultorías Personalizadas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col social-col">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Tammy Blog. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-list').classList.toggle('active');
+            this.querySelector('i').classList.toggle('fa-bars');
+            this.querySelector('i').classList.toggle('fa-times');
+        });
+    </script>
+</body>
+</html>

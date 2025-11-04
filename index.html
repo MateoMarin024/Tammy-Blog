@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tammy Blog | Tu Piel. Ciencia. Integridad.</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="img/Logo.png" alt="Tammy Blog Logo" class="blog-logo-img">
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link current">Inicio</a></li>
+                <li><a href="articulos.html" class="nav-link">Artículos</a></li>
+                <li><a href="recetas.html" class="nav-link">Recetas Caseras</a></li>
+                <li><a href="resenas.html" class="nav-link">Reseñas</a></li>
+                <li><a href="sobre-mi.html" class="nav-link">Sobre Mí</a></li>
+                <li><a href="consultoria.html" class="nav-link">Consultorías</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" aria-label="Abrir menú" id="menu-toggle"><i class="fas fa-bars"></i></button>
+    </header>
+
+    <main class="page-main home-layout">
+        <section class="hero-section">
+            <h1>Tu Piel. Ciencia. Integridad.</h1>
+            <p class="hero-subtitle">Combinamos el rigor de la investigación (Análisis INCI) con el toque cercano y accesible. Aquí obtienes consejos honestos, bien investigados y personalizados.</p>
+            <div class="hero-cta-container">
+                <a href="consultoria.html" class="cta-button primary">Agenda tu Consultoría</a>
+                <a href="articulos.html" class="cta-button secondary">Explora Artículos</a>
+            </div>
+        </section>
+
+        <section class="pillars-section">
+            <h2>Nuestros Pilares de Contenido</h2>
+            <div class="pillars-grid">
+                <div class="pillar-item">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Artículos de Blog</h3>
+                    <p>Guías detalladas sobre ingredientes, tipos de piel y rutinas esenciales.</p>
+                    <a href="articulos.html" class="learn-more">Leer Artículos</a>
+                </div>
+                <div class="pillar-item">
+                    <i class="fas fa-flask"></i>
+                    <h3>Reseñas con Análisis INCI</h3>
+                    <p>Veredictos honestos basados en la composición química de los productos.</p>
+                    <a href="resenas.html" class="learn-more">Ver Reseñas</a>
+                </div>
+                <div class="pillar-item">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Recetas Caseras DIY</h3>
+                    <p>Fórmulas naturales seguras, con ingredientes que tienes en casa y evidencia.</p>
+                    <a href="recetas.html" class="learn-more">Descubre Recetas</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="recent-posts">
+            <h2>Últimas Publicaciones</h2>
+            <div class="post-grid">
+                <a href="img/leer-inci.png" class="post-card"> 
+                    <img src="img/leer-inci.png" alt="Cómo leer el INCI de tus productos">
+                    <div class="post-info">
+                        <span class="category-tag">GUÍA INCI</span>
+                        <h3>Cómo leer el INCI de tus productos</h3>
+                    </div>
+                </a>
+                <a href="rutina-basica.html" class="post-card">
+                    <img src="img/Rutina Facial.png" alt="Cómo crear tu rutina facial básica">
+                    <div class="post-info">
+                        <span class="category-tag">RUTINA</span>
+                        <h3>Cómo crear tu rutina facial básica</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-col about-col">
+                <img src="img/Logo.png" alt="Tammy Blog Logo" class="blog-logo-img small">
+                <p>Tu plataforma de referencia para contenido honesto y experto sobre cuidado de la piel y bienestar.</p>
+            </div>
+            <div class="footer-col nav-col">
+                <h4>Navegación Rápida</h4>
+                <ul>
+                    <li><a href="articulos.html">Blog & Artículos</a></li>
+                    <li><a href="recetas.html">Recetas DIY</a></li>
+                    <li><a href="consultoria.html">Consultorías Personalizadas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col social-col">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class=""></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Tammy Blog. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-list').classList.toggle('active');
+            this.querySelector('i').classList.toggle('fa-bars');
+            this.querySelector('i').classList.toggle('fa-times');
+        });
+    </script>
+</body>
+</html>

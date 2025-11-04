@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Tammy Blog</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="img/Logo.png" alt="Tammy Blog Logo" class="blog-logo-img">
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="articulos.html" class="nav-link">Artículos</a></li>
+                <li><a href="recetas.html" class="nav-link">Recetas Caseras</a></li>
+                <li><a href="resenas.html" class="nav-link">Reseñas</a></li>
+                <li><a href="sobre-mi.html" class="nav-link">Sobre Mí</a></li>
+                <li><a href="consultoria.html" class="nav-link">Consultorías</a></li>
+                <li><a href="contacto.html" class="nav-link current">Contacto</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" aria-label="Abrir menú" id="menu-toggle"><i class="fas fa-bars"></i></button>
+    </header>
+
+    <main class="page-main">
+        <section class="contact-layout">
+            <div class="contact-form-area">
+                <h1>¡Hablemos!</h1>
+                <p class="section-subtitle">¿Tienes preguntas, sugerencias o simplemente quieres saludar? ¡Estoy aquí para escucharte!</p>
+                
+                <form action="#" method="POST" class="contact-form">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                    
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="tu.correo@ejemplo.com" required>
+                    
+                    <label for="subject">Asunto</label>
+                    <input type="text" id="subject" name="subject" placeholder="Consulta, sugerencia, etc.">
+                    
+                    <label for="message">Tu Mensaje</label>
+                    <textarea id="message" name="message" placeholder="Escribe aquí tu mensaje..." required></textarea>
+                    
+                    <button type="submit" class="cta-button primary large">Enviar Mensaje</button>
+                </form>
+            </div>
+            
+            <div class="contact-info-area">
+                <h2>Encuéntrame Aquí</h2>
+                
+                <div class="contact-info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>Correo Electrónico:</strong>
+                        <p>tammyespinoza28@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong>Ubicación:</strong>
+                        <p>Carrera 43A # 17 Sur-30 (Poblado)</p>
+                    </div>
+                </div>
+                
+                <div class="contact-info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <strong>Horario de Respuesta:</strong>
+                        <p>L-V, 8:00 AM - 6:00 PM (Hora local)</p>
+                    </div>
+                </div>
+
+                <h3>¡Sígueme y Conecta!</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-col about-col">
+                <img src="img/Logo.png" alt="Tammy Blog Logo" class="blog-logo-img small">
+                <p>Tu plataforma de referencia para contenido honesto y experto sobre cuidado de la piel y bienestar.</p>
+            </div>
+            <div class="footer-col nav-col">
+                <h4>Navegación Rápida</h4>
+                <ul>
+                    <li><a href="articulos.html">Blog & Artículos</a></li>
+                    <li><a href="recetas.html">Recetas DIY</a></li>
+                    <li><a href="consultoria.html">Consultorías Personalizadas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col social-col">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Tammy Blog. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-list').classList.toggle('active');
+            this.querySelector('i').classList.toggle('fa-bars');
+            this.querySelector('i').classList.toggle('fa-times');
+        });
+    </script>
+</body>
+</html>
